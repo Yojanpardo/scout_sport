@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cazatalentos',
+    'sports',
+    'deportistas',
 ]
 
 MIDDLEWARE = [
@@ -80,9 +83,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'scout_sport',
         'USER': 'scout_sport',
-        'PASSWORD', '123456',
-        'HOST', '127.0.0.1',
-        'PORT', '5432',
+        'PASSWORD': '123456',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
 
@@ -129,5 +132,5 @@ STATICFILES_DIRS = (
 )
 STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.FileSystemFinder',
-    'django.contrib.staticfiles.finders.AppDirectoriesFinder',    
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 ]
