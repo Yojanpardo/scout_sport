@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'cazatalentos',
     'sports',
     'deportistas',
+    'clubs',
 ]
 
 MIDDLEWARE = [
