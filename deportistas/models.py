@@ -24,7 +24,7 @@ class Deportista(models.Model):
     first_lastname = models.CharField(max_length=20)
     second_lastname = models.CharField(max_length=20)
     cellphone_number = models.CharField(max_length=20)
-    interested_sports = models.ManyToManyField('sports.Sport')
+    interested_sport = models.ForeignKey('sports.Sport',on_delete=models.CASCADE)
     subscription_date = models.DateTimeField(auto_now_add=True)
     subscription_update_date = models.DateTimeField(auto_now = True)
     subscription_kind = models.CharField(max_length=1,choices=SUBSCRIPTION_KINDS,default='A')

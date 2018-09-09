@@ -6,3 +6,6 @@ from django.views.generic import TemplateView
 
 class HomeDeportistas(TemplateView):
     template_name = 'deportistas/home.html'
+
+class RegisterDeportista(TemplateView):
+    template_name = 'cazatalentos/register.html'
